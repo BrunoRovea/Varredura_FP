@@ -80,7 +80,6 @@ print('Corrente no ramo 2:', i2)
 print('Corrente no ramo 1:', i1)
 print('----------------------------------------------')
 
-print('Tensão nas barras:')
 print('Tensão na barra 1:', V5)
 print('Tensão na barra 2:', V4)
 print('Tensão na barra 3:', V3)
