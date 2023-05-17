@@ -72,3 +72,23 @@ while(err>tol):
     k += 1
 
 print('Corrente no ramo 5:', i5)
+print('Corrente no ramo 4:', i4)
+print('Corrente no ramo 3:', i3)
+print('Corrente no ramo 2:', i2)
+print('Corrente no ramo 1:', i1)
+
+print('Tensão na barra 1:', V5)
+print('Tensão na barra 2:', V4)
+print('Tensão na barra 3:', V3)
+print('Tensão na barra 4:', V2)
+print('Tensão na barra 5:', V1)
+
+print('Potência injetada na barra 1:', S5)
+print('Potência injetada na barra 2:', S4)
+print('Potência injetada na barra 3:', S3)
+print('Potência injetada na barra 4:', S2)
+print('Potência injetada na barra 5:', S1)
+
+print('Total de iterações:', k)
+print('Erro', err)
+# %%
