@@ -96,7 +96,7 @@ print('Potência injetada na barra 5:', S1)
 print('----------------------------------------------')
 
 print('Total de iterações:', k)
-print('Erro', err)
+print('Erro:', err)
 
 print('Teste git')
 
