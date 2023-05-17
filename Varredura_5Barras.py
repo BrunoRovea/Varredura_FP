@@ -70,4 +70,5 @@ while(err>tol):
 
     err = max(np.abs(S2-S2_in), np.abs(S3-S3_in), np.abs(S4-S4_in), np.abs(S5-S5_in))
     k += 1
-# %%
+
+print('Corrente no ramo 5:', i5)
