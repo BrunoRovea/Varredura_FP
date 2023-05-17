@@ -99,4 +99,6 @@ print('----------------------------------------------')
 print('Total de iterações:', k)
 print('Erro', err)
 
+print('Teste git')
+
 # %%
