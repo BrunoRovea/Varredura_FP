@@ -11,7 +11,7 @@ def ret2pol(x):
     return abs(x), np.rad2deg(np.angle(x))
 
 
-# Tolerância especificada
+# Tolerância especificadaa
 tol = 1E-8
 
 
