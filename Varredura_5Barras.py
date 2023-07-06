@@ -30,10 +30,10 @@ FP = 0.9
 phi = np.arccos(0.9)
 
 S1_in = 10000E3*np.exp(1j*phi)
-S2_in = 320E3*np.exp(1j*phi)
-S3_in = 320E3*np.exp(1j*phi)
-S4_in = 320E3*np.exp(1j*phi)
-S5_in = 320E3*np.exp(1j*phi)
+S2_in = 98489*np.exp(1j*phi)
+S3_in = 144220*np.exp(1j*phi)
+S4_in = 67082*np.exp(1j*phi)
+S5_in = 63246*np.exp(1j*phi)
 
 
 # Tensão inicial em cada nó
@@ -46,7 +46,7 @@ V5 = 35.535E3
 
 
 err = 100
-k = 0
+k   = 0
 while(err>tol):
     #Backward sweep
     i3 = np.conjugate(S3_in/V3)
@@ -72,32 +72,33 @@ while(err>tol):
     k += 1
 
 
-print('Corrente nos ramos:')
-print('Corrente no ramo 5:', i5)
-print('Corrente no ramo 4:', i4)
-print('Corrente no ramo 3:', i3)
-print('Corrente no ramo 2:', i2)
-print('Corrente no ramo 1:', i1)
-print('----------------------------------------------')
+    print('Corrente nos ramos:')
+    print('Corrente no ramo 5:', ret2pol(i5))
+    print('Corrente no ramo 4:', ret2pol(i4))
+    print('Corrente no ramo 3:', ret2pol(i3))
+    print('Corrente no ramo 2:', ret2pol(i2))
+    print('Corrente no ramo 1:', ret2pol(i1))
+    print('----------------------------------------------')
 
-print('Tensão na barra 1:', V5)
-print('Tensão na barra 2:', V4)
-print('Tensão na barra 3:', V3)
-print('Tensão na barra 4:', V2)
-print('Tensão na barra 5:', V1)
-print('----------------------------------------------')
+    print('Tensão na barra 1:', ret2pol(V5))
+    print('Tensão na barra 2:', ret2pol(V4))
+    print('Tensão na barra 3:', ret2pol(V3))
+    print('Tensão na barra 4:', ret2pol(V2))
+    print('Tensão na barra 5:', ret2pol(V1))
+    print('----------------------------------------------')
 
-print('Potência injetada nas barras:')
-print('Potência injetada na barra 1:', S5)
-print('Potência injetada na barra 2:', S4)
-print('Potência injetada na barra 3:', S3)
-print('Potência injetada na barra 4:', S2)
-print('Potência injetada na barra 5:', S1)
-print('----------------------------------------------')
+    print('Potência injetada nas barras:')
+    print('Potência injetada na barra 1:', ret2pol(S5))
+    print('Potência injetada na barra 2:', ret2pol(S4))
+    print('Potência injetada na barra 3:', ret2pol(S3))
+    print('Potência injetada na barra 4:', ret2pol(S2))
+    print('Potência injetada na barra 5:', ret2pol(S1))
+    print('----------------------------------------------')
 
-print('Total de iterações:', k)
-print('Erro:', err)
-
-print('Teste git')
+    print('Total de iterações:', k)
+    print('Erro:', err)
+    print('----------------------------------------------')
+    print('----------------------------------------------')
+    print('                                              ')
 
 # %%
